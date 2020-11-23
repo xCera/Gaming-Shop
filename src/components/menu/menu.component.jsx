@@ -55,12 +55,12 @@ class Menu extends React.Component {
 
         return(
             <div className='menu'>
-                    {this.state.sections.map(({title, imageUrl, id, size, color}) => {
-                        return <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} color={color}></MenuItem>
+                    {this.state.sections.map(({id, ...otherSectionProps}) => {
+                        return <MenuItem key={id} {...otherSectionProps}></MenuItem>
                     })}
             </div>
         )
     }
 }
 
-export default Menu
+export default Menu;
