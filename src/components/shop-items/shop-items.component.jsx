@@ -4,10 +4,12 @@ import Item from '../item/item.component'
 
 const ShopItems = ({title, items}) =>{
     return(
-        <div className='items'>
-            {items.map(({id, ...otherItemProps}) =>{
-                return <Item key={id} {...otherItemProps}></Item>
-            })}
+        <div className='shop-items'>
+            <div className='items'>
+                {items.map(({id, ...otherItemProps}) =>{
+                    return <Item key={id} {...otherItemProps}></Item>
+                })}
+            </div>
         </div>
     )
 }
