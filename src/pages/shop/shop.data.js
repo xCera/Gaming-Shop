@@ -5,6 +5,7 @@ const SHOP_DATA = [
         id: 1,
         title: 'Action',
         routeName: 'action',
+        color: 'pink',
         items: [
           {
             id: 1,
@@ -19,6 +20,7 @@ const SHOP_DATA = [
         id: 2,
         title: 'Adventure',
         routeName: 'adventure',
+        color: 'yellow',
         items: [
           {
               id: 1,
@@ -33,6 +35,7 @@ const SHOP_DATA = [
         id: 3,
         title: 'MMO',
         routeName: 'mmo',
+        color: 'green',
         items: [
           {
               id: 1,
@@ -47,6 +50,7 @@ const SHOP_DATA = [
         id: 4,
         title: 'RPG',
         routeName: 'rpg',
+        color: 'teal',
         items: [
           {
               id: 1,
@@ -61,6 +65,7 @@ const SHOP_DATA = [
         id: 5,
         title: 'Strategy',
         routeName: 'strategy',
+        color: 'blue',
         items: [
           {
               id: 1,
