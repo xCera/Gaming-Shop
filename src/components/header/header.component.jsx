@@ -12,7 +12,12 @@ const Header = ({currentUser}) =>{
                 <Link className='option' to='/shop'>Store</Link>
                 <Link className='option' to='/shop'>Contact</Link>
                 {
-                currentUser ? <div className='option' onClick={() => auth.signOut()}>Sign Out</div> : <Link className='option' to='/login'>Sign in</Link>
+                currentUser ?
+                <div className='sub-options'>
+                    <div className='option' onClick={() => auth.signOut()}>Sign Out</div>
+                    <img className='profile-icon' src={`${currentUser.photoURL ? currentUser.photoURL: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png'}`} alt={currentUser.displayName}></img>
+                </div>
+                : <Link className='option' to='/login'>Sign in</Link>
                 }             
            </div>
         </div>

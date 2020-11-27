@@ -3,7 +3,6 @@ import './homepage.styles.scss'
 import Menu from '../../components/menu/menu.component'
 
 const HomePage = (props) =>{
-    console.log(props);
     return(
         <div className='homepage'>
             <Menu></Menu>

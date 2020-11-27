@@ -28,8 +28,21 @@
       transition: 200ms;
       cursor: pointer;
       &:hover {
+        color: #1c76c0;
         border-bottom: 2px solid #1c76c0;
       }
+    }
+
+    .sub-options {
+      display: flex;
+      align-items: center;
+    }
+    .profile-icon {
+      margin-left: 10px;
+      height: 32px;
+      border-radius: 25px;
+      border: 2px solid #1c76c0;
+      transition: 200ms;
     }
   }
 }
