@@ -25,6 +25,11 @@
       padding: 10px 15px;
       text-decoration: none;
       color: white;
+      transition: 200ms;
+      cursor: pointer;
+      &:hover {
+        border-bottom: 2px solid #1c76c0;
+      }
     }
   }
 }
