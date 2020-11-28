@@ -1,12 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {auth} from '../../firebase/firebase.utils';
-
 import {connect} from 'react-redux';
 
 import './header.styles.scss'
 
-const Header = ({currentUser}) =>{
+import CartIcon from '../cart-icon/cart-icon.component'
+import CartDropdown from '../cart-dropdown/cart-dropdown.component'
+
+const Header = ({currentUser, hidden}) =>{
     return(
         <div className='header'>
            <Link className='logo' to='/'>G-Shop</Link>
@@ -17,17 +19,24 @@ const Header = ({currentUser}) =>{
                 currentUser ?
                 <div className='sub-options'>
                     <div className='option' onClick={() => auth.signOut()}>Sign Out</div>
+                    <CartIcon></CartIcon>    
                     <img className='profile-icon' src={`${currentUser.photoURL ? currentUser.photoURL: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png'}`} alt={currentUser.displayName}></img>
                 </div>
-                : <Link className='option' to='/login'>Sign in</Link>
-                }             
+                : <div className='sub-options'><Link className='option' to='/login'>Sign in</Link> <CartIcon></CartIcon> </div>
+                }
+                            
            </div>
+          {
+              hidden ? null :
+              <CartDropdown></CartDropdown>
+          }
         </div>
     )
 }
 
-const mapStateToProps = state =>({
-     currentUser: state.user.currentUser
+const mapStateToProps = ({user:{currentUser}, cart:{hidden}}) =>({
+     currentUser,
+     hidden
 })
 
 export default connect(mapStateToProps)(Header);
