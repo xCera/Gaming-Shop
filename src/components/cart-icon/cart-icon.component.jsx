@@ -17,4 +17,5 @@ const mapDispathToProps = disptch => ({
 })
 
 
+
 export default connect(null, mapDispathToProps)(CartIcon);
