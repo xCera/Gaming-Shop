@@ -21,6 +21,21 @@
     // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 
+  .custom-button {
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+    top: 100px;
+
+    display: none;
+  }
+
+  &:hover {
+    .custom-button {
+      display: flex;
+    }
+  }
+
   .bg-img {
     height: 208px;
     background-position: center;

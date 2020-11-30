@@ -23,7 +23,7 @@ const SHOP_DATA = [
         color: 'yellow',
         items: [
           {
-              id: 1,
+              id: 10,
               name: 'Assassin’s Creed Valhalla',
               posterUrl: 'https://s1.gaming-cdn.com/images/products/6147/271x377/assassin%e2%80%99s-creed-valhalla-cover.jpg',
               bgUrl:'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic0.srcdn.com%2Fwordpress%2Fwp-content%2Fuploads%2F2020%2F11%2FAssassins-Creed-Valhalla-Wolf-Mount.jpg&f=1&nofb=1',
@@ -38,7 +38,7 @@ const SHOP_DATA = [
         color: 'green',
         items: [
           {
-              id: 1,
+              id: 20,
               name: 'Star Wars: Battlefront 2',
               posterUrl: 'https://s3.gaming-cdn.com/images/products/1835/271x377/star-wars-battlefront-2-cover.jpg',
               bgUrl:'https://s3.gaming-cdn.com/images/products/1835/screenshot/star-wars-battlefront-2-wallpaper-2.jpg',
@@ -53,7 +53,7 @@ const SHOP_DATA = [
         color: 'teal',
         items: [
           {
-              id: 1,
+              id: 30,
               name: 'The Witcher 3: Wild Hunt',
               posterUrl: 'https://s2.gaming-cdn.com/images/products/268/271x377/the-witcher-3-wild-hunt-cover.jpg',
               bgUrl:'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn3.dualshockers.com%2Fwp-content%2Fuploads%2F2015%2F04%2FWitcher3.jpg&f=1&nofb=1',
@@ -68,7 +68,7 @@ const SHOP_DATA = [
         color: 'blue',
         items: [
           {
-              id: 1,
+              id: 40,
               name: 'Age of Empires III',
               posterUrl: 'https://s1.gaming-cdn.com/images/products/825/271x377/age-of-empires-iii-complete-collection-cover.jpg',
               bgUrl:'https://s1.gaming-cdn.com/images/products/825/screenshot/age-of-empires-iii-complete-collection-wallpaper-2.jpg',

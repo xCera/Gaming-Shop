@@ -6,8 +6,10 @@ const ShopItems = ({color, items}) =>{
     return(
         <div className='shop-items'>
             <div className='items'>
-                {items.map(({id, ...otherItemProps}) =>{
-                    return <Item color={color} key={id} {...otherItemProps}></Item>
+                {items
+                .filter((item,idx) => idx < 4)
+                .map(item =>{
+                    return <Item color={color} key={item.id} item={item}></Item>
                 })}
             </div>
         </div>
