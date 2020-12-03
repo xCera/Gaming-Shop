@@ -7,7 +7,7 @@ const ShopItems = ({color, items}) =>{
         <div className='shop-items'>
             <div className='items'>
                 {items
-                .filter((item,idx) => idx < 4)
+                .filter((item,idx) => idx < 5)
                 .map(item =>{
                     return <Item color={color} key={item.id} item={item}></Item>
                 })}

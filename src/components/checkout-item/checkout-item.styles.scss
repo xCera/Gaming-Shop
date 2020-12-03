@@ -10,11 +10,11 @@
 
   .image-container {
     width: 23%;
-    padding-right: 15px;
 
     img {
-      width: 80%;
-      height: 80%;
+      border: 1px solid white;
+      width: 60%;
+      height: 60%;
     }
   }
   .name,
@@ -23,6 +23,19 @@
     width: 23%;
   }
 
+  .quantity {
+    display: flex;
+    justify-content: center;
+    .arrow {
+      user-select: none;
+      color: #1c76c0;
+      cursor: pointer;
+    }
+
+    .value {
+      margin: 0 10px;
+    }
+  }
   .remove-button {
     padding-left: 20px;
     color: rgb(214, 49, 49);

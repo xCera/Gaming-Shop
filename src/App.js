@@ -4,7 +4,7 @@ import {Switch, Route, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
 
 import HomePage from './pages/homepage/homepage.component.jsx'
-import Shop from './pages/shop/shop.component.jsx'
+import ShopPage from './pages/shop/shop.component.jsx'
 import RegisterAndLoginPage from './pages/register-and-login/register-and-login.component.jsx'
 import Header from './components/header/header.component.jsx'
 import CheckoutPage from './pages/checkout/checkout.component'
@@ -47,7 +47,7 @@ componentWillUnmount(){
       <Header></Header>
       <Switch>
         <Route exact path='/' component={HomePage}></Route>
-        <Route path='/genre/:genreId' component={Shop}></Route>
+        <Route path='/shop' component={ShopPage}></Route>
         <Route exact path='/checkout' component={CheckoutPage}></Route>
         <Route exact path='/login' render={() => this.props.currentUser ? (<Redirect to='/'/>):(<RegisterAndLoginPage />)}></Route>
       </Switch>
